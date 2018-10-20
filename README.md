@@ -25,8 +25,8 @@ table_lines
 5. Run `lines_to_table` or `get_table`.
 
 ### Note
-Function lines_to_table has a parameter `row_heights` that can be an empty vector. In case it is an empty vector, we assume that the first cell of each table row has only 1 line of text, which means the number of non-empty elements in the first column of the matrix is equal to the number of rows, and that each table row ends (if aligned bottom) or starts (if aligned top) with a line that has text in all columns.
-So row_heights is needed when there might be confusion. Confusion can occur when:
+Function `lines_to_table` has a parameter `row_heights` that can be an empty vector. In case it is an empty vector, we assume that the first cell of each table row has only 1 line of text, which means the number of non-empty elements in the first column of the matrix is equal to the number of rows, and that each table row ends (if aligned bottom) or starts (if aligned top) with a line that has text in all columns.
+So `row_heights` is needed when there might be confusion. Confusion can occur when:
   
 * In the first column of the table, some cell is empty or has more than 1 lines of text
 * A table row has an empty cell or has more than 1 lines with text in all columns.
